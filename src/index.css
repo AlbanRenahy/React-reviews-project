@@ -236,6 +236,12 @@ main {
   color: var(--clr-white);
 }
 
+.heart-icon{
+  display: inline-block;
+  bottom: 0;
+  transform: translateY(20%);
+}
+
 .author {
   margin-bottom: 0.25rem;
 }
@@ -278,4 +284,9 @@ main {
 .random-btn:hover {
   background: var(--clr-primary-5);
   color: var(--clr-primary-1);
+}
+
+.footer {
+  text-align: center;
+  margin-top: 2rem;
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import people from './data';
-import { FaChevronLeft, FaChevronRight, FaQuoteRight } from 'react-icons/fa';
+import { FaChevronLeft, FaChevronRight, FaQuoteRight, FaHeart } from 'react-icons/fa';
+import { } from 'react-icons/'
 const Review = () => {
   const [index, setIndex] = useState(0);
   const { name, job, image, text } = people[index];
@@ -34,6 +35,7 @@ const Review = () => {
   };
 
   return (
+    <>
     <article className='review'>
       <div className='img-container'>
         <img src={image} alt={name} className='person-img' />
@@ -53,9 +55,11 @@ const Review = () => {
         </button>
       </div>
       <button className='random-btn' onClick={randomPerson}>
-        surprise me
+        surprenez moi
       </button>
     </article>
+    <p className="footer">Codé avec <FaHeart className="heart-icon"/> par <a href="http://albanrenahy.com" target="_blank">Alban Renahy</a></p>
+    </>
   );
 };
 
